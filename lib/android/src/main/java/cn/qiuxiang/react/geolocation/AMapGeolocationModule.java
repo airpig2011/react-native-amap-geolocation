@@ -42,8 +42,8 @@ public class AMapGeolocationModule extends ReactContextBaseJavaModule implements
         if (client != null) {
             client.onDestroy();
         }
-        AMapLocationClient.updatePrivacyShow(context,true,true);
-        AMapLocationClient.updatePrivacyAgree(context,true);
+        AMapLocationClient.updatePrivacyShow(reactContext,true,true);
+        AMapLocationClient.updatePrivacyAgree(reactContext,true);
         
         AMapLocationClient.setApiKey(key);
         client = new AMapLocationClient(reactContext);
